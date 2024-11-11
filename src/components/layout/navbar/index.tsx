@@ -3,7 +3,7 @@ import { Menu } from "@/lib/shopify/types";
 import Link from "next/link";
 import MobileMenu from "./mobile-menu";
 import Search from "./search";
-import LogoSquare from "@/components/logo-square";
+import Image from "next/image";  // Import Image component
 import CartModal from "@/components/cart/modal";
 
 export async function Navbar() {
@@ -20,10 +20,14 @@ export async function Navbar() {
             prefetch={true}
             className="mr-2 flex w-full items-center justify-center md:w-auto lg:mr-6"
           >
-            <LogoSquare />
-            {/* <div className="ml-2 flex-none text-sm font-medium uppercase md:hidden lg:block">
-              {process.env.SITE_NAME}
-            </div> */}
+            {/* Replace LogoSquare with Image */}
+            <Image 
+              src="/icon.png"  // Adjust the path to your logo
+              alt="Site Logo"
+              width={100}  // Set the width of the logo
+              height={100} // Set the height of the logo
+              className="object-contain" // Ensure the logo scales correctly
+            />
           </Link>
 
           {menu.length > 0 ? (
