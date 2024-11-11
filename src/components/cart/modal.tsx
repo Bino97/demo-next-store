@@ -212,9 +212,14 @@ export default function CartModal() {
                       />
                     </div>
                   </div>
-                  <form action={redirectToCheckout}>
-                    <CheckoutButton />
-                  </form>
+                  <form
+  onSubmit={(e) => {
+    e.preventDefault();
+    redirectToCheckout();
+  }}
+>
+  <CheckoutButton />
+</form>
                 </div>
               )}
             </Dialog.Panel>
