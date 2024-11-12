@@ -148,24 +148,15 @@ export default function Home() {
           <div className="space-y-3 z-50">
             <div className="bg-white dark:bg-black">
               <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight p-2">
-                Explore Our Sale Collection
+                Rep the Lingofi Community Wherever You Go
               </h2>
             </div>
-            <div className="bg-white">
+            {/* <div className="bg-white">
               <p className="mx-auto max-w-[600px] text-black md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed p-2">
                 Don&apos;t miss out on our amazing deals and discounts.
               </p>
+            </div> */}
             </div>
-          </div>
-          <div className="mx-auto w-full max-w-sm space-y-2 z-50">
-            <Link
-              href="#"
-              className="inline-flex h-10 items-center justify-center rounded-md bg-slate-200 dark:bg-black px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-              prefetch={false}
-            >
-              Shop Sale
-            </Link>
-          </div>
         </div>
       </section>
     </main>
