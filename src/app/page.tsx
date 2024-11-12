@@ -39,13 +39,13 @@ export default function Home() {
                 >
                   Shop Accessories
                 </Link>
-                <Link
+                {/* <Link
                   href="/search/stationary-collection"
                   className="inline-flex h-9 items-center justify-center rounded-md border border-[#0353fe] bg-background px-4 py-2 text-sm font-medium shadow-sm transition-colors hover:bg-[#0353fe] hover:text-white focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#0353fe] disabled:pointer-events-none disabled:opacity-50"
                   prefetch={false}
                 >
                   Shop Stationary
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>
@@ -74,44 +74,44 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="mx-auto grid items-start justify-center gap-8 sm:max-w-4xl sm:grid-cols-2 md:gap-12 lg:max-w-5xl lg:grid-cols-4">
+          <div className="mx-auto grid items-start justify-center gap-8 sm:max-w-4xl sm:grid-cols-2 md:gap-12 lg:max-w-5xl lg:grid-cols-3">
             <div className="grid gap-1">
               <Link
-                href="/search/womens-collection"
+                href="/search/country-tees"
                 className="group"
                 prefetch={false}
               >
                 <img
-                  src="/womens-collection.png"
+                  src="/countries-collection.png"
                   width="400"
                   height="500"
                   alt="Women's Collection"
                   className="aspect-[4/5] overflow-hidden rounded-lg object-cover group-hover:scale-105 transition-transform"
                 />
                 <h3 className="mt-4 text-lg font-bold group-hover:underline">
-                  Women\&apos;s Collection
+                  Country Tees Collection
                 </h3>
               </Link>
             </div>
             <div className="grid gap-1">
               <Link
-                href="/search/mens-collection"
+                href="/search/originals-collection"
                 className="group"
                 prefetch={false}
               >
                 <img
-                  src="/mens-collection.png"
+                  src="/originals-collection.png"
                   width="400"
                   height="500"
                   alt="Men's Collection"
                   className="aspect-[4/5] overflow-hidden rounded-lg object-cover group-hover:scale-105 transition-transform"
                 />
                 <h3 className="mt-4 text-lg font-bold group-hover:underline">
-                  Men\&apos;s Collection
+                  Lingofi Originals Collection
                 </h3>
               </Link>
             </div>
-            <div className="grid gap-1">
+            {/* <div className="grid gap-1">
               <Link href="/search/kids" className="group" prefetch={false}>
                 <img
                   src="/kids-collection.png"
@@ -124,11 +124,11 @@ export default function Home() {
                   Kids\&apos;s Collection
                 </h3>
               </Link>
-            </div>
+            </div> */}
             <div className="grid gap-1">
-              <Link href="/search/sales" className="group" prefetch={false}>
+              <Link href="/search/accessories-collection" className="group" prefetch={false}>
                 <img
-                  src="/sales-collection.png"
+                  src="/accessories-collection.png"
                   width="400"
                   height="500"
                   alt="Sale's Collection"
