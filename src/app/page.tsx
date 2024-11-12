@@ -135,7 +135,7 @@ export default function Home() {
                   className="aspect-[4/5] overflow-hidden rounded-lg object-cover group-hover:scale-105 transition-transform"
                 />
                 <h3 className="mt-4 text-lg font-bold group-hover:underline">
-                  Sale\&apos;s Collection
+                  Accessories Collection
                 </h3>
               </Link>
             </div>
