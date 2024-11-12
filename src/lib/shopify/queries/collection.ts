@@ -1,6 +1,9 @@
 import { collectionFragment } from "../fragments/collection";
 import { productFragment } from "../fragments/product";
 
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 export const getCollectionsQuery = /* GraphQL */ `
   query getCollections {
     collections(first: 100, sortKey: TITLE) {
