@@ -24,8 +24,8 @@ export async function Navbar() {
             <Image 
               src="/icon.png"  // Adjust the path to your logo
               alt="Site Logo"
-              width={100}  // Set the width of the logo
-              height={100} // Set the height of the logo
+              width={75}  // Set the width of the logo
+              height={75} // Set the height of the logo
               className="object-contain" // Ensure the logo scales correctly
             />
           </Link>

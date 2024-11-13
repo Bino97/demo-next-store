@@ -2,9 +2,15 @@ import Link from "next/link";
 
 export const metadata = {
   description:
-    "The Lingofi Merch Store - Finding all things Lingofi for all ocassions",
+    "The Lingofi Merch Store - Finding all things Lingofi for all occasions",
   openGraph: {
     type: "website",
+    images: [
+      {
+        url: "/landing.png", // Update this path to the correct image URL
+        alt: "Lingofi Merch Store Banner", // Add an alt description for accessibility
+      },
+    ],
   },
 };
 
@@ -143,22 +149,23 @@ export default function Home() {
         </div>
       </section>
       <section className="w-full py-12 lg:py-7 bg-[#0353fe] bg-blend-multiply grid place-content-center">
-        <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6">
-          {/* <img src="/sale-banner.svg" alt="sale footer banner" /> */}
-          <div className="space-y-3 z-50">
-            <div className="bg-white dark:bg-black">
-              <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight p-2">
-                Rep the Lingofi Community Wherever You Go
-              </h2>
-            </div>
-            {/* <div className="bg-white">
-              <p className="mx-auto max-w-[600px] text-black md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed p-2">
-                Don&apos;t miss out on our amazing deals and discounts.
-              </p>
-            </div> */}
-            </div>
-        </div>
-      </section>
+  <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6">
+    {/* <img src="/sale-banner.svg" alt="sale footer banner" /> */}
+    <div className="space-y-3 z-50">
+      <div className="bg-white dark:bg-black rounded-lg p-4">
+        <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">
+          Rep the Lingofi Community Wherever You Go
+        </h2>
+      </div>
+      {/* <div className="bg-white">
+        <p className="mx-auto max-w-[600px] text-black md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed p-2">
+          Don&apos;t miss out on our amazing deals and discounts.
+        </p>
+      </div> */}
+    </div>
+  </div>
+</section>
+
     </main>
   );
 }
